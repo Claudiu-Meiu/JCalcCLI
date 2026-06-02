@@ -49,7 +49,6 @@ public class Parser {
             output.add(operators.pop().symbol());
         }
 
-        System.out.println(operators);
         return output;
     }
 }

@@ -15,7 +15,7 @@ public class Basic {
                 }
             }
 
-            Evaluator.evaluate(expression);
+            Evaluator.printResult(expression);
         }
     }
 }

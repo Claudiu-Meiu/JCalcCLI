@@ -13,7 +13,7 @@ public class Lexer {
 
     public static List<String> tokenize(String expression) {
         List<String> tokens = new ArrayList<>();
-        
+
         Pattern tokenPattern = Pattern.compile(
                 patterns().get(TokenType.NUMBER).pattern() + "|" +
                         patterns().get(TokenType.SYMBOL).pattern());
@@ -29,7 +29,7 @@ public class Lexer {
 
     private static Map<TokenType, Pattern> patterns() {
         Map<TokenType, Pattern> patterns = new HashMap<>();
-        patterns.put(TokenType.NUMBER, Pattern.compile("\\d+\\.\\d+|\\d+"));
+        patterns.put(TokenType.NUMBER, Pattern.compile("(\\d+(\\.\\d+)?|\\.\\d+)"));
         patterns.put(TokenType.SYMBOL, Pattern.compile("[\\-+*/]"));
 
         return patterns;
