@@ -12,8 +12,8 @@ import calculator.Shunting_Yard_Algorithm.enums.TokenType;
 public class Lexer {
 
     public static List<String> tokenize(String expression) {
-
         List<String> tokens = new ArrayList<>();
+        
         Pattern tokenPattern = Pattern.compile(
                 patterns().get(TokenType.NUMBER).pattern() + "|" +
                         patterns().get(TokenType.SYMBOL).pattern());

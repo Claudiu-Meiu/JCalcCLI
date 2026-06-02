@@ -8,9 +8,7 @@ import calculator.menu.basic.Basic;
 public class Menu {
 
     public static void run(Scanner scanner) {
-
         while (true) {
-
             System.out.println("\n1. Basic");
             System.out.println("2. Advanced");
             System.out.println("0. Exit");
